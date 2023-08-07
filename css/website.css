@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+body{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ /* background: url(./animals.jpg!d)no-repeat; */
+ background-size: cover;
+ background-position: center;
+ 
+ 
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.Logo{
+    
+    font-size: 2rem;
+    color:white;
+    user-select: none;
+    
+    
+}
+.navigation  a{
+    position: relative;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500px;
+    margin-left: 40px;
+
+}
+
+
+
+
+.navigation .login{
+    height: 35px;
+    width: 70px;
+    font-size: 1rem;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #fff ;
+    margin-left: 30px;
+    cursor: pointer;
+   
+   
+
+    
+}
+
+.navigation .login:hover{
+    background:white;
+    color:black;
+    
+}
+.navigation  a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform-origin: right;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s;;
+
+
+    
+}
+.navigation  a:hover:after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.wallper{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 400px;
+   width: 400px;
+   background-color: transparent;
+   border: 2px solid rgb(225, 225,225, .5);
+   border-radius: 20px;
+   backdrop-filter: blur(20px);
+   box-shadow: 0,0,30px rgb(0,0,0,);
+   overflow: hidden;
+   
+}
+ .wallper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:45px;
+    height: 30px;
+   background-color: black;
+   font-size: 2rem;
+   color: white;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+
+}
+.wallper .form-box{
+    width:100%;
+    padding: 40px;
+
+}
+.form-box h2{
+   text-align: center;
+   font-size: 2rem;
+   color: black;
+  
+
+}
+.input-box{
+    margin: 30px 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+
+}
+.input-box label{
+    position:absolute;
+    top: 50%;
+    left:5px;
+    transform:translateY(-50%);
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: .5px;
+}
+
+
+.input-box input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: rgb(59, 57, 57);
+    font-weight: 600;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    line-height:57px;
+    color: #162938;
+
+}
+.remember{
+    font-size: 0.9rem;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content:space-between;
+
+    
+}
+  .btn{
+    height: 35px;
+    width: 100%;
+    background: black;
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+    
+    
+} 
+.login-register{
+    margin-top: 20px;
+    text-align: center;
+   
+
+}
+.login-register p a {
+    color: blue;
+    
+     text-decoration: none;
+    font-weight: 600;
+   
+}
+.login-register p a:hover{
+    text-decoration: underline;
+   
+
+}
+.register-link{
+    margin-left: 15px;
+}
+
+/* uhofih */
+
+.parent{
+    display: flex;
+    flex-direction: column;
+}
+.hero{
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: transparent; */
+    padding: 15px 5%;
+    transition: all .50s ease;
+    background-color: orange;
+}
+
+.logo img{
+    height: auto;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 8px 20px;
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--other-color);
+    transition: all .40s ease;
+    /* gap: 1rem; */
+}
+.navbar a:hover{
+    color: white;
+    
+}
+.h-btn{
+    display: flex;
+    align-items: center;
+}
+.h-btn2{
+   display: inline-block;
+   padding: 10px 18px;
+   background: var(--main-color);
+   color: var(--text-color);
+   font-size: 18px;
+   font-weight: 500;
+   margin-left: 20px;
+   transition: all .40s ease;
+ /* border: 3px solid orange; */
+
+ 
+}
+.h-btn1{
+    color: var(--other-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+.h-btn1:hover{
+    color: black;
+}
+.h-btn2:hover{
+    transform: translateX(-7px);
+    color: #101821;
+ border: 3px solid black;
+
+}
